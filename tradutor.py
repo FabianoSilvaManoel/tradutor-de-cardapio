@@ -28,12 +28,50 @@ GLOSARIO = {
     "coberto": "covered",
     "molho": "sauce",
     "molho caesar": "caesar dressing",
-    "tomate": "tomato"
-    "queijo": "cheese"
-
-
-
-
-
-
+    "tomate": "tomato",
+    "queijo": "cheese",
+    "servido": "served",
+    "com": "with",
+    "arroz": "rice",
+    "batata": "potato",
+    "fritas": "fries",
+    "feijoada": "feijoada (Brazilian black-bean stew)"
+    "feijão": "beans",
+    "preto": "black",
+    "carne": "meat",
+    "seca":, "dried",
+    "linguiça": "sausage",
+    "costelinha": "pork ribs",
+    "farofa": "toasted cassava flour(farofa)",
+    "couve": "collard greens",
+    "salada": "salad",
+    "alface": "lettuce",
+    "frango": "chicken",
+    "grelhado": "grilled",
+    "croutons": "croutons",
+    "pão": "bread",
+    "alho": "garlic",
+    "assado": "roasted",
+    "manteiga": "butter",
+    "ervas": "herbs",
+    "doce": "sweet",
+    "chocolate": "chocolate",
+    "granulado": "sprinkles",
+    "brigadeiro": "brigadiro(chocolate truffle)",
 }
+def normalize_text(text: str) -> str:
+    ***Limpeza/normalizaçao simples(abreviaçoes comuns),***
+    if not isinstance(text, str):
+        return s.strip()"""
+        s = text
+        repl = {
+    " c/ ": " com ",
+    " c/ ": "com",        
+    " c/": "com",
+    "p/ ": "para",
+    " R$": "R$"    
+
+        }
+
+def traduzir_texto(texto: str,
+glosario: dict) ->
